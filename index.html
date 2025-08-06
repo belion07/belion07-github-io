@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regalo Especial - Pao</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sparkles" id="sparkles"></div>
+        <div class="heart-rain" id="heartRain"></div>
+
+        <div class="photo-gallery" id="photoGallery">
+            <div class="photo-container" onclick="showFullImage('fotos/pao1.jpeg', 'Mi Estrella')">
+                <img src="pao1.jpeg" alt="Pao 1" class="photo">
+                <div class="photo-caption">Mi Estrella</div>
+            </div>
+            <div class="photo-container large" onclick="showFullImage('fotos/pao2.jpeg', 'Mi Luz')">
+                <img src="pao2.jpeg" alt="Pao 2" class="photo">
+                <div class="photo-caption">Mi Luz</div>
+            </div>
+            <div class="photo-container" onclick="showFullImage('fotos/pao3.jpeg', 'Te Quiero')">
+                <img src="pao3.jpeg" alt="Pao 3" class="photo">
+                <div class="photo-caption">Te Quiero</div>
+            </div>
+            <div class="photo-container large" onclick="showFullImage('fotos/pao4.jpeg', 'Mi Amor')">
+                <img src="pao4.jpeg" alt="Pao 4" class="photo">
+                <div class="photo-caption">Mi Amor</div>
+            </div>
+            <div class="photo-container" onclick="showFullImage('fotos/pao5.jpeg', 'Divertida')">
+                <img src="pao5.jpeg" alt="Pao 5" class="photo">
+                <div class="photo-caption">Divertida</div>
+            </div>
+            <div class="photo-container" onclick="showFullImage('fotos/pao6.jpeg', 'Mi Tesoro')">
+                <img src="pao6.jpeg" alt="Pao 6" class="photo">
+                <div class="photo-caption">Mi Tesoro</div>
+            </div>
+            <div class="photo-container large" onclick="showFullImage('fotos/pao7.jpeg', 'Mi Todo')">
+                <img src="pao7.jpeg" alt="Pao 7" class="photo">
+                <div class="photo-caption">Mi Todo</div>
+            </div>
+            <div class="photo-container large" onclick="showFullImage('fotos/pao8.jpeg', 'Creativa')">
+                <img src="pao8.jpeg" alt="Pao 8" class="photo">
+                <div class="photo-caption">Creativa</div>
+            </div>
+            <div class="photo-container" onclick="showFullImage('fotos/pao9.jpeg', 'Mi Inspiración')">
+                <img src="pao9.jpeg" alt="Pao 9" class="photo">
+                <div class="photo-caption">Mi Inspiración</div>
+            </div>
+            <div class="photo-container" onclick="showFullImage('fotos/pao10.jpeg', 'Eres Única')">
+                <img src="pao10.jpeg" alt="Pao 10" class="photo">
+                <div class="photo-caption">Eres Única</div>
+            </div>
+            <div class="photo-container" onclick="showFullImage('fotos/pao11.jpeg', 'Mi Felicidad')">
+                <img src="pao11.jpeg" alt="Pao 11" class="photo">
+                <div class="photo-caption">Mi Felicidad</div>
+            </div>
+            <div class="photo-container" onclick="showFullImage('fotos/pao12.jpeg', 'Por Siempre')">
+                <img src="pao12.jpeg" alt="Pao 12" class="photo">
+                <div class="photo-caption">Por Siempre</div>
+            </div>
+        </div>
+
+
+
+        <div class="full-image-modal" id="fullImageModal">
+            <div class="modal-content">
+                <div class="image-section">
+                    <img id="fullImage" src="" alt="Imagen completa">
+                    <button class="close-modal" onclick="closeFullImage()">×</button>
+                </div>
+                <div class="message-section">
+                    <h2 id="imageTitle"></h2>
+                    <p id="imageMessage"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="music-control">
+        <button class="music-btn" onclick="toggleMusic()" id="musicBtn">🔊 Música</button>
+    </div>
+
+    <audio id="backgroundMusic" loop>
+        <source src="Bruno Mars.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html> 
